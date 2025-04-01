@@ -1,25 +1,18 @@
-# Functions in python
-# function is used to seperate the code
-#Function is a Block of code that perform a specific task when it is called.
-# By using function you I'm print geometric mean 
-# If you want using function you need def keyword 
-def calculategmean (a,b):
-    mean=(a*b)/(a+b)
-    print (mean)
-def greatervalue(a,b):
-    if(a>b):
-        print("First Number is greater:")
+while True:
+    number=int(input("Enter a number (stop to Enter 0):"))
+    if number==0:
+        print("Exiting the program:")
+        break
+    elif number%2==0:
+        print(f"{number} is even")
     else:
-        print("Second Number is greater:")
-a=10
-b=7
-calculategmean(a,b)
-greatervalue(a,b)
-c=7
-d=47
-calculategmean(c,d)
-greatervalue(c,d)
-#If you want to write a function but don't want to write its body yet, you can leave it for
-#  later and write it like this. To avoid from error
-# def islesser(a,b):
-#     pass
+        print(f"{number} is odd")
+    # Write code for print table of Numbers
+    while True:
+        num =int(input("Enter a number ( negative to stop):"))
+        if num<0:
+            print("Exiciting a program:")
+            break
+        print(f"\n Mutliplication table of {num}:")
+        for i in range(1,11):
+            print(f"{num} x {i} = {num*i}")
